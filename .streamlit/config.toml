@@ -1,0 +1,15 @@
+[client]
+toolbarMode = "minimal"
+showDeployButton = false
+
+[theme]
+base = "dark"
+primaryColor = "#6366f1"
+backgroundColor = "#0b0f14"
+secondaryBackgroundColor = "#151b23"
+textColor = "#f8fafc"
+
+[server]
+headless = true
+enableCORS = false
+

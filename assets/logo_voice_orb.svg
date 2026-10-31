@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100" height="100">
+  <defs>
+    <linearGradient id="orbBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#1e1b4b"/>
+    </linearGradient>
+    <linearGradient id="neonWave" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="50%" stop-color="#818cf8"/>
+      <stop offset="100%" stop-color="#c084fc"/>
+    </linearGradient>
+    <filter id="neonGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="0" stdDeviation="4" flood-color="#818cf8" flood-opacity="0.6"/>
+    </filter>
+  </defs>
+
+  <!-- Background Base -->
+  <rect x="8" y="8" width="84" height="84" rx="22" fill="url(#orbBg)" stroke="#312e81" stroke-width="2"/>
+
+  <!-- Voice Soundwave Visualizer Bars forming an AI Pulse -->
+  <g filter="url(#neonGlow)">
+    <rect x="24" y="44" width="6" height="12" rx="3" fill="url(#neonWave)"/>
+    <rect x="34" y="34" width="6" height="32" rx="3" fill="url(#neonWave)"/>
+    <rect x="44" y="24" width="6" height="52" rx="3" fill="url(#neonWave)"/>
+    <rect x="54" y="32" width="6" height="36" rx="3" fill="url(#neonWave)"/>
+    <rect x="64" y="40" width="6" height="20" rx="3" fill="url(#neonWave)"/>
+    <rect x="74" y="46" width="6" height="8" rx="3" fill="url(#neonWave)"/>
+  </g>
+
+  <!-- Pulsing AI Node dot -->
+  <circle cx="47" cy="24" r="4" fill="#38bdf8" filter="url(#neonGlow)"/>
+</svg>
+
